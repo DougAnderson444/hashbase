@@ -1,6 +1,6 @@
-dir: ./.hashbase
-brandname: Hashbase
-hostname: hashbase.local
+dir: ./peerdata
+brandname: PeerPiper
+hostname: peerpiper.herokuapp.com
 proxy: true
 port: 8080
 letsencrypt: false
@@ -9,8 +9,8 @@ rateLimiting: true
 csrf: true
 
 # usage limits
-defaultDiskUsageLimit: 100mb
-defaultNamedArchivesLimit: 15
+defaultDiskUsageLimit: 1mb
+defaultNamedArchivesLimit: 1
 proDiskUsageLimit: 10gb
 proNamedArchivesLimit: 100
 bandwidthLimit:
