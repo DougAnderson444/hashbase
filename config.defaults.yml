@@ -1,0 +1,64 @@
+dir: ./.hashforkproduction
+brandname: PeerPiper
+hostname: superpeer.azurewebsites.net/
+proxy: true
+port: 8080
+letsencrypt: false
+sites: false
+rateLimiting: true
+csrf: true
+env: production
+
+# usage limits
+defaultDiskUsageLimit: 100mb
+defaultNamedArchivesLimit: 10
+proDiskUsageLimit: 10gb
+proNamedArchivesLimit: 100
+bandwidthLimit:
+  up: 1mb
+  down: 1mb
+
+# processing jobs
+jobs:
+  popularArchivesIndex: 30s
+  userDiskUsage: 5m
+  deleteDeadArchives: 5m
+
+# cache settings
+cache:
+  metadataStorage: 65536
+  contentStorage: 65536
+  tree: 65536
+
+# monitoring
+pm2: false
+alerts:
+  diskUsage: 1gb
+
+# user settings
+registration:
+  open: false
+  allowed:
+    - alice@mail.com
+    - bob@mail.com
+  reservedNames:
+    - admin
+    - root
+    - support
+    - noreply
+    - users
+    - archives
+admin:
+  email: 'douganderson444@gmail.com'
+  password: 'admin123!'
+
+# email settings
+email:
+  transport: stub
+  sender: '"PeerPiper" <info@peerpiper.io>'
+
+# login sessions
+sessions:
+  algorithm: HS256
+  secret: testSecret
+  expiresIn: 1h

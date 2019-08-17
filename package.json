@@ -40,6 +40,7 @@
     "express-rate-limit": "^2.11.0",
     "express-server-sent-events": "^1.1.0",
     "express-validator": "^3.2.1",
+    "figures": "3.0.0",
     "get-folder-size": "^1.0.1",
     "greenlock-express": "^2.6.8",
     "hyperdrive": "^9.14.2",

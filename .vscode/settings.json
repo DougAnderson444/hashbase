@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/8afbdbef-d2b8-4c4e-abbc-5ef1b4860419/resourceGroups/Peerpipe/providers/Microsoft.Web/sites/superpeer",
+    "appService.deploySubpath": ""
+}
